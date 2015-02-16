@@ -10,30 +10,32 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
-tBodyAcc-XYZ
-tGravityAcc-XYZ
-tBodyAccJerk-XYZ
-tBodyGyro-XYZ
-tBodyGyroJerk-XYZ
-tBodyAccMag
-tGravityAccMag
-tBodyAccJerkMag
-tBodyGyroMag
-tBodyGyroJerkMag
-fBodyAcc-XYZ
-fBodyAccJerk-XYZ
-fBodyGyro-XYZ
-fBodyAccMag
-fBodyAccJerkMag
-fBodyGyroMag
-fBodyGyroJerkMag
+Values for these variables were calculated as a mean of variables of the same name which were in the raw dataset.
+
+*tBodyAcc-XYZ
+*tGravityAcc-XYZ
+*tBodyAccJerk-XYZ
+*tBodyGyro-XYZ
+*tBodyGyroJerk-XYZ
+*tBodyAccMag
+*tGravityAccMag
+*tBodyAccJerkMag
+*tBodyGyroMag
+*tBodyGyroJerkMag
+*fBodyAcc-XYZ
+*fBodyAccJerk-XYZ
+*fBodyGyro-XYZ
+*fBodyAccMag
+*fBodyAccJerkMag
+*fBodyGyroMag
+*fBodyGyroJerkMag
 
 The set of variables that were estimated from these signals are: 
 
-mean(): Mean value
-std(): Standard deviation
+*mean(): Mean value
+*std(): Standard deviation
 
- of all variables
+##Description of all variables
 <table border=0 cellpadding=0 cellspacing=0 width=713 style='border-collapse:
  collapse;table-layout:fixed;width:535pt'>
  <col width=214 style='mso-width-source:userset;mso-width-alt:7826;width:161pt'>
@@ -405,7 +407,7 @@ std(): Standard deviation
  <tr height=20 style='height:15.0pt'>
   <td height=20 class=xl15405 style='height:15.0pt'>Activity</td>
   <td class=xl15405>activity</td>
-  <td class=xl15405></td>
+  <td class=xl15405>WALKING<br/>WALKING_UPSTAIRS<br/>WALKING_DOWNSTAIRS<br/>SITTING<br/>STANDING<br/>LAYING</td>
  </tr>
  <![if supportMisalignedColumns]>
  <tr height=0 style='display:none'>
