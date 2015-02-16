@@ -34,80 +34,385 @@ mean(): Mean value
 std(): Standard deviation
 
  of all variables
-<table>
-<tr><td> Variable</td>	<td>Description	Values</td></tr>
-<tr><td>tBodyAcc-mean()-X</td>	<td>time of body acceleration signals</td> - mean-X	<td>-1 … 1</td></tr>
-tBodyAcc-mean()-Y	time of body acceleration signals - mean-Y	-1 … 1
-tBodyAcc-mean()-Z	time of body acceleration signals - mean-Z	-1 … 1
-tGravityAcc-mean()-X	time of gravity acceleration signals - mean-X	-1 … 1
-tGravityAcc-mean()-Y	time of gravity acceleration signals - mean-Y	-1 … 1
-tGravityAcc-mean()-Z	time of gravity acceleration signals - mean-Z	-1 … 1
-tBodyAccJerk-mean()-X	time of body acceleration signals jerk signals - mean-X	-1 … 1
-tBodyAccJerk-mean()-Y	time of body acceleration signals jerk signals - mean-Y	-1 … 1
-tBodyAccJerk-mean()-Z	time of body acceleration signals jerk signals - mean-Z	-1 … 1
-tBodyGyro-mean()-X	time of body gyroscope - mean-X	-1 … 1
-tBodyGyro-mean()-Y	time of body gyroscope - mean-Y	-1 … 1
-tBodyGyro-mean()-Z	time of body gyroscope - mean-Z	-1 … 1
-tBodyGyroJerk-mean()-X	time of body gyroscope jerk signals - mean-X	-1 … 1
-tBodyGyroJerk-mean()-Y	time of body gyroscope jerk signals - mean-Y	-1 … 1
-tBodyGyroJerk-mean()-Z	time of body gyroscope jerk signals - mean-Z	-1 … 1
-tBodyAccMag-mean()	time of body acceleration signals magnitude - mean	-1 … 1
-tGravityAccMag-mean()	time of gravity acceleration signals magnitude - mean	-1 … 1
-tBodyAccJerkMag-mean()	time of body acceleration signals jerk signals magnitude - mean	-1 … 1
-tBodyGyroMag-mean()	time of body gyroscope magnitude - mean	-1 … 1
-tBodyGyroJerkMag-mean()	time of body gyroscope jerk signals magnitude - mean	-1 … 1
-fBodyAcc-mean()-X	frequency of body acceleration signals - mean-X	-1 … 1
-fBodyAcc-mean()-Y	frequency of body acceleration signals - mean-Y	-1 … 1
-fBodyAcc-mean()-Z	frequency of body acceleration signals - mean-Z	-1 … 1
-fBodyAccJerk-mean()-X	frequency of body acceleration signals jerk signals - mean-X	-1 … 1
-fBodyAccJerk-mean()-Y	frequency of body acceleration signals jerk signals - mean-Y	-1 … 1
-fBodyAccJerk-mean()-Z	frequency of body acceleration signals jerk signals - mean-Z	-1 … 1
-fBodyGyro-mean()-X	frequency of body gyroscope - mean-X	-1 … 1
-fBodyGyro-mean()-Y	frequency of body gyroscope - mean-Y	-1 … 1
-fBodyGyro-mean()-Z	frequency of body gyroscope - mean-Z	-1 … 1
-fBodyAccMag-mean()	frequency of body acceleration signals magnitude - mean	-1 … 1
-fBodyBodyAccJerkMag-mean()	frequency of body body acceleration signals jerk signals magnitude - mean	-1 … 1
-fBodyBodyGyroMag-mean()	frequency of body body gyroscope magnitude - mean	-1 … 1
-fBodyBodyGyroJerkMag-mean()	frequency of body body gyroscope jerk signals magnitude - mean	-1 … 1
-tBodyAcc-std()-X	time of body acceleration signals - standard deviation-X	-1 … 1
-tBodyAcc-std()-Y	time of body acceleration signals - standard deviation-Y	-1 … 1
-tBodyAcc-std()-Z	time of body acceleration signals - standard deviation-Z	-1 … 1
-tGravityAcc-std()-X	time of gravity acceleration signals - standard deviation-X	-1 … 1
-tGravityAcc-std()-Y	time of gravity acceleration signals - standard deviation-Y	-1 … 1
-tGravityAcc-std()-Z	time of gravity acceleration signals - standard deviation-Z	-1 … 1
-tBodyAccJerk-std()-X	time of body acceleration signals jerk signals - standard deviation-X	-1 … 1
-tBodyAccJerk-std()-Y	time of body acceleration signals jerk signals - standard deviation-Y	-1 … 1
-tBodyAccJerk-std()-Z	time of body acceleration signals jerk signals - standard deviation-Z	-1 … 1
-tBodyGyro-std()-X	time of body gyroscope - standard deviation-X	-1 … 1
-tBodyGyro-std()-Y	time of body gyroscope - standard deviation-Y	-1 … 1
-tBodyGyro-std()-Z	time of body gyroscope - standard deviation-Z	-1 … 1
-tBodyGyroJerk-std()-X	time of body gyroscope jerk signals - standard deviation-X	-1 … 1
-tBodyGyroJerk-std()-Y	time of body gyroscope jerk signals - standard deviation-Y	-1 … 1
-tBodyGyroJerk-std()-Z	time of body gyroscope jerk signals - standard deviation-Z	-1 … 1
-tBodyAccMag-std()	time of body acceleration signals magnitude - standard deviation	-1 … 1
-tGravityAccMag-std()	time of gravity acceleration signals magnitude - standard deviation	-1 … 1
-tBodyAccJerkMag-std()	time of body acceleration signals jerk signals magnitude - standard deviation	-1 … 1
-tBodyGyroMag-std()	time of body gyroscope magnitude - standard deviation	-1 … 1
-tBodyGyroJerkMag-std()	time of body gyroscope jerk signals magnitude - standard deviation	-1 … 1
-fBodyAcc-std()-X	frequency of body acceleration signals - standard deviation-X	-1 … 1
-fBodyAcc-std()-Y	frequency of body acceleration signals - standard deviation-Y	-1 … 1
-fBodyAcc-std()-Z	frequency of body acceleration signals - standard deviation-Z	-1 … 1
-fBodyAccJerk-std()-X	frequency of body acceleration signals jerk signals - standard deviation-X	-1 … 1
-fBodyAccJerk-std()-Y	frequency of body acceleration signals jerk signals - standard deviation-Y	-1 … 1
-fBodyAccJerk-std()-Z	frequency of body acceleration signals jerk signals - standard deviation-Z	-1 … 1
-fBodyGyro-std()-X	frequency of body gyroscope - standard deviation-X	-1 … 1
-fBodyGyro-std()-Y	frequency of body gyroscope - standard deviation-Y	-1 … 1
-fBodyGyro-std()-Z	frequency of body gyroscope - standard deviation-Z	-1 … 1
-fBodyAccMag-std()	frequency of body acceleration signals magnitude - standard deviation	-1 … 1
-fBodyBodyAccJerkMag-std()	frequency of body body acceleration signals jerk signals magnitude - standard deviation	-1 … 1
-fBodyBodyGyroMag-std()	frequency of body body gyroscope magnitude - standard deviation	-1 … 1
-fBodyBodyGyroJerkMag-std()	frequency of body body gyroscope jerk signals magnitude - standard deviation	-1 … 1
-Subject	subject	1 … 30
-Activity	activity	WALKING
-						WALKING_UPSTAIRS
-						WALKING_DOWNSTAIRS
-						SITTING
-						STANDING
-						LAYING
+<table border=0 cellpadding=0 cellspacing=0 width=713 style='border-collapse:
+ collapse;table-layout:fixed;width:535pt'>
+ <col width=214 style='mso-width-source:userset;mso-width-alt:7826;width:161pt'>
+ <col width=435 style='mso-width-source:userset;mso-width-alt:15908;width:326pt'>
+ <col width=64 style='width:48pt'>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 width=214 style='height:15.0pt;width:161pt'>Variable</td>
+  <td class=xl15405 width=435 style='width:326pt'>Description</td>
+  <td class=xl15405 width=64 style='width:48pt'>Values</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>tBodyAcc-mean()-X</td>
+  <td class=xl15405>time of body acceleration signals - mean-X</td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>tBodyAcc-mean()-Y</td>
+  <td class=xl15405>time of body acceleration signals - mean-Y</td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>tBodyAcc-mean()-Z</td>
+  <td class=xl15405>time of body acceleration signals - mean-Z</td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>tGravityAcc-mean()-X</td>
+  <td class=xl15405>time of gravity acceleration signals - mean-X</td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>tGravityAcc-mean()-Y</td>
+  <td class=xl15405>time of gravity acceleration signals - mean-Y</td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>tGravityAcc-mean()-Z</td>
+  <td class=xl15405>time of gravity acceleration signals - mean-Z</td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>tBodyAccJerk-mean()-X</td>
+  <td class=xl15405>time of body acceleration signals jerk signals - mean-X</td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>tBodyAccJerk-mean()-Y</td>
+  <td class=xl15405>time of body acceleration signals jerk signals - mean-Y</td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>tBodyAccJerk-mean()-Z</td>
+  <td class=xl15405>time of body acceleration signals jerk signals - mean-Z</td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>tBodyGyro-mean()-X</td>
+  <td class=xl15405>time of body gyroscope - mean-X</td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>tBodyGyro-mean()-Y</td>
+  <td class=xl15405>time of body gyroscope - mean-Y</td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>tBodyGyro-mean()-Z</td>
+  <td class=xl15405>time of body gyroscope - mean-Z</td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>tBodyGyroJerk-mean()-X</td>
+  <td class=xl15405>time of body gyroscope jerk signals - mean-X</td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>tBodyGyroJerk-mean()-Y</td>
+  <td class=xl15405>time of body gyroscope jerk signals - mean-Y</td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>tBodyGyroJerk-mean()-Z</td>
+  <td class=xl15405>time of body gyroscope jerk signals - mean-Z</td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>tBodyAccMag-mean()</td>
+  <td class=xl15405>time of body acceleration signals magnitude - mean</td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>tGravityAccMag-mean()</td>
+  <td class=xl15405>time of gravity acceleration signals magnitude - mean</td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>tBodyAccJerkMag-mean()</td>
+  <td class=xl15405>time of body acceleration signals jerk signals magnitude -
+  mean</td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>tBodyGyroMag-mean()</td>
+  <td class=xl15405>time of body gyroscope magnitude - mean</td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>tBodyGyroJerkMag-mean()</td>
+  <td class=xl15405>time of body gyroscope jerk signals magnitude - mean</td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>fBodyAcc-mean()-X</td>
+  <td class=xl15405>frequency of body acceleration signals - mean-X</td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>fBodyAcc-mean()-Y</td>
+  <td class=xl15405>frequency of body acceleration signals - mean-Y</td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>fBodyAcc-mean()-Z</td>
+  <td class=xl15405>frequency of body acceleration signals - mean-Z</td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>fBodyAccJerk-mean()-X</td>
+  <td class=xl15405>frequency of body acceleration signals jerk signals -
+  mean-X</td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>fBodyAccJerk-mean()-Y</td>
+  <td class=xl15405>frequency of body acceleration signals jerk signals -
+  mean-Y</td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>fBodyAccJerk-mean()-Z</td>
+  <td class=xl15405>frequency of body acceleration signals jerk signals -
+  mean-Z</td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>fBodyGyro-mean()-X</td>
+  <td class=xl15405>frequency of body gyroscope - mean-X</td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>fBodyGyro-mean()-Y</td>
+  <td class=xl15405>frequency of body gyroscope - mean-Y</td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>fBodyGyro-mean()-Z</td>
+  <td class=xl15405>frequency of body gyroscope - mean-Z</td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>fBodyAccMag-mean()</td>
+  <td class=xl15405>frequency of body acceleration signals magnitude - mean</td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>fBodyBodyAccJerkMag-mean()</td>
+  <td class=xl15405>frequency of body body acceleration signals jerk signals
+  magnitude - <span style='display:none'>mean</span></td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>fBodyBodyGyroMag-mean()</td>
+  <td class=xl15405>frequency of body body gyroscope magnitude - mean</td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>fBodyBodyGyroJerkMag-mean()</td>
+  <td class=xl15405>frequency of body body gyroscope jerk signals magnitude -
+  mean</td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>tBodyAcc-std()-X</td>
+  <td class=xl15405>time of body acceleration signals - standard deviation-X</td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>tBodyAcc-std()-Y</td>
+  <td class=xl15405>time of body acceleration signals - standard deviation-Y</td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>tBodyAcc-std()-Z</td>
+  <td class=xl15405>time of body acceleration signals - standard deviation-Z</td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>tGravityAcc-std()-X</td>
+  <td class=xl15405>time of gravity acceleration signals - standard deviation-X</td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>tGravityAcc-std()-Y</td>
+  <td class=xl15405>time of gravity acceleration signals - standard deviation-Y</td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>tGravityAcc-std()-Z</td>
+  <td class=xl15405>time of gravity acceleration signals - standard deviation-Z</td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>tBodyAccJerk-std()-X</td>
+  <td class=xl15405>time of body acceleration signals jerk signals - standard
+  deviation-X</td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>tBodyAccJerk-std()-Y</td>
+  <td class=xl15405>time of body acceleration signals jerk signals - standard
+  deviation-Y</td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>tBodyAccJerk-std()-Z</td>
+  <td class=xl15405>time of body acceleration signals jerk signals - standard
+  deviation-Z</td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>tBodyGyro-std()-X</td>
+  <td class=xl15405>time of body gyroscope - standard deviation-X</td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>tBodyGyro-std()-Y</td>
+  <td class=xl15405>time of body gyroscope - standard deviation-Y</td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>tBodyGyro-std()-Z</td>
+  <td class=xl15405>time of body gyroscope - standard deviation-Z</td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>tBodyGyroJerk-std()-X</td>
+  <td class=xl15405>time of body gyroscope jerk signals - standard deviation-X</td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>tBodyGyroJerk-std()-Y</td>
+  <td class=xl15405>time of body gyroscope jerk signals - standard deviation-Y</td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>tBodyGyroJerk-std()-Z</td>
+  <td class=xl15405>time of body gyroscope jerk signals - standard deviation-Z</td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>tBodyAccMag-std()</td>
+  <td class=xl15405>time of body acceleration signals magnitude - standard
+  deviation</td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>tGravityAccMag-std()</td>
+  <td class=xl15405>time of gravity acceleration signals magnitude - standard
+  deviation</td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>tBodyAccJerkMag-std()</td>
+  <td class=xl15405>time of body acceleration signals jerk signals magnitude -
+  standard de<span style='display:none'>viation</span></td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>tBodyGyroMag-std()</td>
+  <td class=xl15405>time of body gyroscope magnitude - standard deviation</td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>tBodyGyroJerkMag-std()</td>
+  <td class=xl15405>time of body gyroscope jerk signals magnitude - standard
+  deviation</td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>fBodyAcc-std()-X</td>
+  <td class=xl15405>frequency of body acceleration signals - standard
+  deviation-X</td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>fBodyAcc-std()-Y</td>
+  <td class=xl15405>frequency of body acceleration signals - standard
+  deviation-Y</td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>fBodyAcc-std()-Z</td>
+  <td class=xl15405>frequency of body acceleration signals - standard
+  deviation-Z</td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>fBodyAccJerk-std()-X</td>
+  <td class=xl15405>frequency of body acceleration signals jerk signals -
+  standard deviatio<span style='display:none'>n-X</span></td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>fBodyAccJerk-std()-Y</td>
+  <td class=xl15405>frequency of body acceleration signals jerk signals -
+  standard deviatio<span style='display:none'>n-Y</span></td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>fBodyAccJerk-std()-Z</td>
+  <td class=xl15405>frequency of body acceleration signals jerk signals -
+  standard deviatio<span style='display:none'>n-Z</span></td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>fBodyGyro-std()-X</td>
+  <td class=xl15405>frequency of body gyroscope - standard deviation-X</td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>fBodyGyro-std()-Y</td>
+  <td class=xl15405>frequency of body gyroscope - standard deviation-Y</td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>fBodyGyro-std()-Z</td>
+  <td class=xl15405>frequency of body gyroscope - standard deviation-Z</td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>fBodyAccMag-std()</td>
+  <td class=xl15405>frequency of body acceleration signals magnitude - standard
+  deviation</td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>fBodyBodyAccJerkMag-std()</td>
+  <td class=xl15405>frequency of body body acceleration signals jerk signals
+  magnitude - s<span style='display:none'>tandard deviation</span></td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>fBodyBodyGyroMag-std()</td>
+  <td class=xl15405>frequency of body body gyroscope magnitude - standard
+  deviation</td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>fBodyBodyGyroJerkMag-std()</td>
+  <td class=xl15405>frequency of body body gyroscope jerk signals magnitude -
+  standard d<span style='display:none'>eviation</span></td>
+  <td class=xl15405>-1 … 1</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>Subject</td>
+  <td class=xl15405>subject</td>
+  <td class=xl15405>1 … 30</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl15405 style='height:15.0pt'>Activity</td>
+  <td class=xl15405>activity</td>
+  <td class=xl15405></td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=214 style='width:161pt'></td>
+  <td width=435 style='width:326pt'></td>
+  <td width=64 style='width:48pt'></td>
+ </tr>
+ <![endif]>
 </table>
 
