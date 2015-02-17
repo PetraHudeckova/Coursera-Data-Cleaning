@@ -10,8 +10,6 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
-Values for these variables were calculated as a mean of variables of the same name which were in the raw dataset.
-
 * tBodyAcc-XYZ
 * tGravityAcc-XYZ
 * tBodyAccJerk-XYZ
@@ -34,6 +32,8 @@ The set of variables that were estimated from these signals are:
 
 * mean(): Mean value
 * std(): Standard deviation
+
+Values for these variables were calculated as a mean of variables of the same name which were in the raw dataset.
 
 ##Description of all variables
 <table border=0 cellpadding=0 cellspacing=0 width=713 style='border-collapse:

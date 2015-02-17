@@ -35,9 +35,6 @@ features <- features[,!duplicates]
 # from features-info.txt)
 featuresTidy <- features %>%
   select(contains("mean()"), contains("std()"))  
-dim(featuresTidy)
-
-
 
 #Join activities with activities names and then selecting only column
 #with names
@@ -45,7 +42,7 @@ activities <- activities %>%
   inner_join(activitiesLabels) %>%
     select(V2)
 
-#Set names to features, activities, subjects
+#Set names to factivities, subjects
 activityName <- "Activity"
 names(activities) <- activityName
 subjectName <- "Subject"
@@ -53,18 +50,11 @@ names(subjects) <- subjectName
 
 #Cbind features, activity and subjects together
 tidyData <- cbind(featuresTidy, subjects, activities)
-head(tidyData)
-names(tidyData)
 
 #Create new dataset
 dataSet <- tidyData %>%
-  #select(Activity, Subject) %>%
   group_by(Subject, Activity) %>%  
   summarise_each(funs(mean))
 
-dataSet <- tbl_df(dataSet)
-dataSet
 write.table(dataSet, file="data.txt", row.name=FALSE)
-write.table(names(dataSet), file="names.txt", row.name=FALSE)
-write.table(names(dataSet), file="description.txt", row.name=FALSE)
 
