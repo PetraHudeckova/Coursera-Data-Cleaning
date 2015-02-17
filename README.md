@@ -1,6 +1,6 @@
 Introduction
 ============
-This script was created to prepare defined raw data for detailed analysis.
+This script was created to prepare defined raw data to tidy.
 The format of the output is wide.
 Description of all variables can be found in CodeBook.md
 
