@@ -5,7 +5,7 @@ The format of the output is wide.
 Description of all variables can be found in CodeBook.md
 
 ##Requirements
-*library dplyr, recommended version 0.4.1
+* library dplyr, recommended version 0.4.1
 
 ##How to use the script
 1. Download raw data set from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
