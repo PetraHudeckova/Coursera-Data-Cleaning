@@ -40,7 +40,7 @@ featuresTidy <- features %>%
 #with names
 activities <- activities %>%
   inner_join(activitiesLabels) %>%
-    select(V2)
+  select(V2)
 
 #Set names to factivities, subjects
 activityName <- "Activity"
@@ -56,5 +56,10 @@ dataSet <- tidyData %>%
   group_by(Subject, Activity) %>%  
   summarise_each(funs(mean))
 
-write.table(dataSet, file="data.txt", row.name=FALSE)
+#Get rid of () in column names
+names(dataSet) <- make.names(names(dataSet))
+names(dataSet) <- gsub("...", ".", names(dataSet), fixed=T)
+names(dataSet) <- gsub("..", "", names(dataSet), fixed=T)
 
+
+write.table(dataSet, file="data.txt", row.name=FALSE)
