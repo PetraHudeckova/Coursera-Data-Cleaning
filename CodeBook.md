@@ -392,7 +392,7 @@ The names of the variables were edited to fit R naming variables style.
  <tr height=20 style='height:15.0pt'>
   <td height=20 style='height:15.0pt'>Activity</td>
   <td>activity</td>
-  <td></td>
+  <td>LAYING<br/>SITTING<br/>STANDING<br/>WALKING<br/>WALKING_DOWNSTAIRS<br/>WALKING_UPSTAIRS</td>
  </tr>
  <![if supportMisalignedColumns]>
  <tr height=0 style='display:none'>
