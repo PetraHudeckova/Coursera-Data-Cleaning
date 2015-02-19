@@ -2,7 +2,7 @@ Introduction
 ============
 This script was created to prepare defined raw data to tidy and make a simple analysis.
 The format of the output is wide.
-Description of all variables can be found in CodeBook.md
+Description of all variables can be found in CodeBook.md.
 Source code is in file run_analysis.R.
 
 ##Requirements
@@ -26,7 +26,9 @@ After finishing, tidy data set is saved in file 'data.txt' in the UCI HAR Datase
 4. It removes duplicate feature names and select columns with std() or mean()
 5. It binds test and train data. NOTE: In the same order, eg. testActivity with trainActivity
 6. It creates new dataset, grouped by subjects and activities.
-7. It saves the dataset in data.txt file.
+7. It creates mean of all other columns.
+8. It makes column names to fit R requirements.
+9. It saves the dataset in data.txt file.
 
 
 
