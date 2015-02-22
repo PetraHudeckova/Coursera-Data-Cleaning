@@ -36,7 +36,13 @@ The set of variables that were estimated from these signals are:
 Values for these variables were calculated as a mean of variables of the selected variables, excluded subject and activity.
 The names of the variables were edited to fit R naming variables style.
 
+
 ##Description of all variables
+
+Subject is integer.
+Activity is Factor.
+All other columns are numeric.
+
 <table border=0 cellpadding=0 cellspacing=0 width=713 style='border-collapse:
  collapse;table-layout:fixed;width:535pt'>
  <col width=214 style='mso-width-source:userset;mso-width-alt:7826;width:161pt'>

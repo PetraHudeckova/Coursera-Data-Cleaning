@@ -16,7 +16,8 @@ Source code is in file run_analysis.R.
 4. Set your working directory in your R IDE to this folder
 5. Run run_analysis.R
 
-After finishing, tidy data set is saved in file 'data.txt' in the UCI HAR Dataset
+After finishing, tidy data set is saved in file 'data.txt' in the UCI HAR Dataset. 
+To load the file, use read.table() with the filename as the parameter.
 
 ##How the script works
 
