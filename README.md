@@ -1,5 +1,6 @@
 Introduction
 ============
+
 This script was created to prepare defined raw data to tidy and make a simple analysis.
 The format of the output is wide.
 Description of all variables can be found in CodeBook.md.
